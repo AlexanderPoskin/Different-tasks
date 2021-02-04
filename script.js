@@ -13,4 +13,15 @@ console.log(alexNow);
 
 console.log(String(23), 23);
 
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+// Iterables: arrays, strings, maps, sets NOT objects
+
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+
+
 
