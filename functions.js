@@ -174,3 +174,17 @@ const addTaxRate = function(rate) {
 };
 
 const addVAT2 = addTaxRate(0.23);
+
+// Immediately Invoked Function Expressions
+
+const runOnce = function () {
+    console.log('This will never run again');
+};
+runOnce();
+
+(function () {
+    console.log('This will never run again');
+})();
+
+(() => console.log('This will ALSO never run again'))
+();
